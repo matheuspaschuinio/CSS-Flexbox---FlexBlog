@@ -30,7 +30,7 @@ img {
 /* Superinfo CSS */
 
 .superinfo-bg {
-    background: #122ab2;
+    background: #4A90E2;
     color: white;
 }
 
@@ -105,8 +105,8 @@ img {
 /* Sobre */
 
 .sobre {
-    border-top: 2px solid #2c70ff;
-    border-bottom: 2px solid #2c70ff;
+    border-top: 2px solid #7B61FF;
+    border-bottom: 2px solid #7B61FF;
     max-width: 960px;
     margin: 0 auto;
     padding: 60px 0;
@@ -181,15 +181,15 @@ img {
 }
 
 .purple {
-    border-top: 8px solid #ae81ff;
+    border-top: 8px solid #7B61FF;
 }
 
 .pink {
-    border-top: 8px solid #f9265e;
+    border-top: 8px solid #FF9F43;
 }
 
 .blue {
-    border-top: 8px solid #66d9eb;
+    border-top: 8px solid #4A90E2;
 }
 
 
@@ -197,7 +197,7 @@ img {
 /* Notícias */
 
 .noticias {
-    background: #f7f7f7;
+    background: #D6E6FF;
     padding: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -211,6 +211,7 @@ img {
     margin: 0 10px 40px 10px;
     width: 100%;
     color: #333;
+    order: -2;
 }
 
 .noticia-item {
@@ -267,6 +268,16 @@ img {
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+.dicas-titulo {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
 }
 
 .dicas-item {
@@ -353,7 +364,7 @@ img {
     font-size: 1.25em;
     color: #555;
     font-family: "Nunito", Helvetica, Arial, sans-serif;
-    border: 3px solid #2c70ff;
+    border: 3px solid #7B61FF;
     background: transparent;
     padding: 15px 10px;
     border-radius: 4px; 
@@ -374,7 +385,7 @@ img {
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
-    background: #2c70ff;
+    background: #4A90E2;
     color: white;
     margin: 0;
     cursor: pointer;
@@ -385,7 +396,7 @@ img {
 }
 
 .contato-form button:hover {
-    background: #1b4fbb; 
+    background: #FF9F43; 
 }
 
 @media (max-width: 600px) {
@@ -399,7 +410,7 @@ img {
 
 .footer {
     display: flex;
-    background: #2c70ff;
+    background: #4A90E2;
     height: 200px;
     align-items: center;
     justify-content: center;
@@ -407,7 +418,7 @@ img {
 
 .footer-content {
     text-align: center;
-    color: #122ab2; 
+    color: white; 
 }
 
 .footer-content p {
