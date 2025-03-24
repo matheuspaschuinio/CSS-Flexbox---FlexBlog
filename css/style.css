@@ -136,34 +136,48 @@ img {
     margin: 0 10px;
 }
 
-/* Produtos */
+/* Funcionalidades */
 
-.produtos {
+.funcionalidades {
     max-width: 960px;
     margin: 60px auto;
 }
 
-.produtos h1 {
+.funcionalidades h1 {
     font-size: 3em;
     margin: 0 10px 60px 10px;
+    text-align: center;
 }
 
-.produtos-container {
+.funcionalidades-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.produtos-item {
+.funcionalidades-item {
     flex: 1 1 175px;
     margin: 10px;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.produtos-item h2 {
-    font-size: 3em;
+.funcionalidades-item h2 {
+    font-size: 2em;
     color: #a4a4a4;
-    background: #f7f7f7;
-    padding: 60px 20px;
+    margin-bottom: 10px;
+}
+
+.funcionalidades-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5em;
+    margin: 0;
 }
 
 .purple {
@@ -178,119 +192,95 @@ img {
     border-top: 8px solid #66d9eb;
 }
 
-/* Preco */
 
-.preco {
+
+/* Notícias */
+
+.noticias {
     background: #f7f7f7;
     padding: 60px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.preco-item {
+.noticias h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 0 10px 40px 10px;
+    width: 100%;
+    color: #333;
+}
+
+.noticia-item {
     flex: 1 1 260px;
     border: 4px solid white;
     padding: 20px;
     margin: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.preco-item h2 {
-    font-size: 3em;
+.noticia-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.noticia-item h2 {
+    font-size: 2em;
     color: #a4a4a4;
     text-align: center;
     margin-top: 20px;
 }
 
-.preco-item span {
-    max-width: 300px;
-    margin: 20px auto;
-    display: block;
-    font-size: 3em;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 0 5px 0;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-}
-
-.preco-item sup {
-    font-size: 1.5rem;
-}
-
-.preco-item ul {
+.noticia-item p {
     max-width: 300px;
     margin: 20px auto;
     font-size: 1.25em;
+    text-align: justify;
     font-style: italic;
     color: #7c7c7c;
 }
 
-.preco-item li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.preco-item li::after {
-    content: '';
-    display: block;
-    width: 6px;
-    height: 6px;
-    background: #2c70ff;
-    border-radius: 50%;
-}
-
-.preco-item a {
-    max-width: 300px;
-    display: block;
-    margin: 20px auto;
-    border: 4px solid;
-    color: #222222;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2.25em;
-    padding: 15px 0;
-    text-align: center;
-}
-
 @media (max-width: 800px) {
-    .preco {
+    .noticias {
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .preco .preco-item:nth-child(3) {
+    .noticias .noticia-item:nth-child(3) {
         order: -2;
     }
 
-    .preco .preco-item:nth-child(2) {
+    .noticias .noticia-item:nth-child(2) {
         order: -1;
     }
 }
 
-/* Qualidade */
 
-.qualidade {
+/* Dicas Educacionais */
+
+.dicas {
     max-width: 960px;
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.qualidade-item {
+.dicas-item {
     flex: 1 1 300px;
     margin: 20px 10px;
 }
 
-.qualidade-item h2 {
+.dicas-item h2 {
     font-size: 2.25em;
     color: #a4a4a4;
     margin-bottom: 20px;
 }
 
-.qualidade-item h2::before {
+.dicas-item h2::before {
     content: '';
     display: inline-block;
     width: 8px;
@@ -298,91 +288,112 @@ img {
     margin-right: 10px;
 }
 
-.qualidade-item:nth-last-of-type(3n+1) h2::before {
+.dicas-item:nth-last-of-type(3n+1) h2::before {
     background: #ae81ff;
 }
 
-.qualidade-item:nth-last-of-type(3n+2) h2::before {
+.dicas-item:nth-last-of-type(3n+2) h2::before {
     background: #f9265e;
 }
 
-.qualidade-item:nth-last-of-type(3n+3) h2::before {
+.dicas-item:nth-last-of-type(3n+3) h2::before {
     background: #66d9eb;
 }
 
-.qualidade-item p {
+.dicas-item p {
     font-size: 1.25em;
-    line-height: 1.4;
+    line-height: 1.6;
     color: #7c7c7c;
+    text-align: justify;
 }
 
-/* Newsletter */
 
-.newsletter {
+
+/* Contato */
+
+.contato {
     background: #f7f7f7;
-    padding: 60px calc((100% - 960px) / 2 );
+    padding: 60px calc((100% - 960px) / 2);
     display: flex;
     flex-wrap: wrap;
+    align-items: center; 
 }
 
-.newsletter-info {
+.contato-info {
     flex: 1 1 240px;
     margin: 0 10px;
+    text-align: left; 
 }
 
-.newsletter-info h1 {
+.contato-info h1 {
     font-size: 3em;
-    color: #a4a4a4;
+    color: #333; 
+    margin-bottom: 15px;
 }
 
-.newsletter-info p {
+.contato-info p {
     font-size: 1.25em;
-    font-style: italic;
-    max-width: 230px;
-    color: #7c7c7c;
-    margin-bottom: 10px;
+    color: #555; 
+    max-width: 300px;
+    margin-bottom: 20px;
 }
 
-.newsletter-form {
+.contato-form {
     flex: 2 1 260px;
     margin: 0 10px;
-    align-self: center;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px; 
+    align-self: center;
 }
 
-.newsletter-form input {
+.contato-form input,
+.contato-form textarea {
     flex: 3 1 260px;
     font-size: 1.25em;
-    color: #7c7c7c;
-    font-style: italic;
+    color: #555;
     font-family: "Nunito", Helvetica, Arial, sans-serif;
-    border: 4px solid #2c70ff;
+    border: 3px solid #2c70ff;
     background: transparent;
     padding: 15px 10px;
-    margin: 0px;
-    border-radius: 0px;
+    border-radius: 4px; 
 }
 
-.newsletter-form button {
+.contato-form textarea {
+    resize: none; 
+}
+
+.contato-form input::placeholder,
+.contato-form textarea::placeholder {
+    color: #bbb; 
+}
+
+.contato-form button {
     flex: 1 1 260px;
     font-family: "Nunito", Helvetica, Arial, sans-serif;
-    font-size: 2.25em;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     background: #2c70ff;
     color: white;
-    margin: 0px;
+    margin: 0;
     cursor: pointer;
     border: 0px;
     padding: 15px 10px;
+    border-radius: 4px; 
+    transition: background 0.3s ease;
+}
+
+.contato-form button:hover {
+    background: #1b4fbb; 
 }
 
 @media (max-width: 600px) {
-    .newsletter-form button {
+    .contato-form button {
         font-size: 1.5em;
     }
 }
+
 
 /* Footer */
 
@@ -391,11 +402,32 @@ img {
     background: #2c70ff;
     height: 200px;
     align-items: center;
+    justify-content: center;
 }
 
-.footer p {
-    flex: 1;
+.footer-content {
     text-align: center;
-    font-size: 2.25em;
+    color: #122ab2; 
+}
+
+.footer-content p {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.footer-links a {
+    font-size: 1.5em;
     color: #122ab2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: white;
 }
